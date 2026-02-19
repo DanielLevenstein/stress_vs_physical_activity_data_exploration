@@ -12,7 +12,7 @@ The analysis includes:
 
 Three distinct clusters were identified when analyzing the full dataset, suggesting meaningful population-level groupings. However, when the data were examined within individual occupations, these cluster patterns were not consistently reproduced. In several cases, apparent correlations appeared to be influenced by outliers rather than stable occupation-level trends.
 
-![Clustering Overview](images/Stress_Level_by_Cluster_Extended.png)
+![Clustering Overview](images/Stress_Level_by_Cluster_Expanded.png)
 
 *Figure: K-means clustering reveals three distinct population-level groups based on total activity and stress.*
 

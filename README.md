@@ -21,12 +21,14 @@ These results suggest that the relationship between activity and stress is more 
 This project demonstrates exploratory analysis, clustering, and the importance of validating aggregate patterns at the subgroup level when working with real-world data.
 
 ## Final Observations
+- Individuals with a below-average physical activity level could reduce stress by increasing their total activity levels.
+- Individuals with above-average activity can reduce stress by lowering their activity levels.
+- Based on this dataset, the ideal daily step count came out to be 7000.
 
-- Looking at the scatter plots of the two sets of occupations, it looks like the two occupations with a positive correlation between stress and total activity levels are likely caused by outliers.
-- This indicates that although the 3 clusters I described early appear in aggregate, the hypothesis that they may be linked to occupation is not shown in this data.
+We analyzed if the different correlations could be caused by a person's occupation but found there was not enough data in the dataset to get any conclusive information about that. 
 
 ## Actionable Observations
+Efforts to improve sleep duration and sleep quality have a huge effect on overall health.
 
-- Efforts to improve sleep duration and sleep quality have a huge effect on overall health.
 
 Tools: Python, Pandas, Seaborn, Scikit-learn, Jupyter

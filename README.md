@@ -19,11 +19,14 @@ Three distinct clusters were identified when analyzing the full dataset, suggest
 These results suggest that the relationship between activity and stress is more evident at the aggregate level than within specific occupations. Several occupations were also excluded due to insufficient sample sizes, limiting subgroup analysis.
 
 This project demonstrates exploratory analysis, clustering, and the importance of validating aggregate patterns at the subgroup level when working with real-world data.
+
 ## Final Observations
+
 - Looking at the scatter plots of the two sets of occupations, it looks like the two occupations with a positive correlation between stress and total activity levels are likely caused by outliers.
 - This indicates that although the 3 clusters I described early appear in aggregate, the hypothesis that they may be linked to occupation is not shown in this data.
 
 ## Actionable Observations
+
 - Efforts to improve sleep duration and sleep quality have a huge effect on overall health.
 
-Tools: Python, Pandas, Matplotlib/Seaborn, Scikit-learn, Jupyter
+Tools: Python, Pandas, Seaborn, Scikit-learn, Jupyter

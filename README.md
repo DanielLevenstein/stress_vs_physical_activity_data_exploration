@@ -9,26 +9,33 @@ The analysis includes:
 - Correlation analysis
 - K-means clustering to identify patterns in activity and stress
 
-## Methodology:
+Several distinct clusters were identified when analyzing the full dataset, suggesting meaningful population-level groupings. However, when the data were examined within individual occupations, these cluster patterns were not consistently reproduced. In several cases, clear correlations appeared to be influenced by outliers rather than stable occupation-level trends.
 
-In this project I created a combined metric called Total_Physical_Activity which combined the data from the Daily Steps an Physical Activity Column. This allowed me to create more readable charts and allowed be to quickly determine the corrilation between different samples within clusters.
+These results suggest that the relationship between activity and stress is more visible at the aggregate level than within specific occupations. Several occupations were also excluded due to insufficient sample sizes, limiting subgroup analysis.
 
-## Experiments:
+This project uses the Sleep Health and Lifestyle Dataset from Kaggle dataset, and is published on Kaggle at the following URL.
+https://www.kaggle.com/code/daniellevenstein/stress-vs-physical-activity-correlation
 
-On looking at the intial Stres vs Physical Activity data I saw what looked like 2-3 distinct clusters in the raw data so I rand the kmeans algorithem on the data twice once for 2 clusters and once for three. I found that both cluster groups were potentially useful but the 2 cluster data was more stable over time so I think it's a more accurate description of the underling patterns. 
+## Methodology
 
+In this project I created a combined metric called Total_Physical_Activity which combined the data from the Daily Steps a Physical Activity Column. This allowed me to create more readable charts and allowed be to quickly determine the correlation between different samples within clusters.
 
-![Clustering Overview](images/Stress_Level_by_Cluster_Side_by_Side.png)
+## Experiments
 
-*Figure: K-means clustering reveals distinct population-level groups based on total activity and stress.*
+On looking at the initial Stress vs. Physical Activity data, I saw what looked like 2–3 distinct clusters in the raw data, so I ran the kmeans algorithm on the data twice, once for two clusters and once for three. I found that both cluster groups were potentially useful. The two cluster data were more stable over time; therefore, I think it's a more accurate description of the underling patterns.
+
 
 ## Findings
 
-When looking closly at the two cluster data I found that the low activity population had a negitive corrilation between stress and activity levels while the high activity population had a positive corrilation. I hypothesised that this corrilation could have been linked to occupation but when I looked closer at the occupation data I found that the wasn't enough data in my dataset to get concrete conclusions from it. Even the individual occupations which showed a positive stress vs activity corrilation didn't show as strong a corrilation once I looked at the raw data. This was likely due to several occupations having insufficient sample sizes for detailed analasis.
+When looking closely at the two cluster data, I found that the low-activity population had a negative correlation between stress and activity levels while the high-activity population had a positive correlation. I hypothesized that this correlation could have been linked to occupation, but when I looked closer at the occupation data, I found that there wasn't enough data in my dataset to get concrete conclusions from it. Even the individual occupations which showed a positive stress vs. activity correlation didn't show as strong a correlation once I looked at the raw data. This was likely due to several occupations having insufficient sample sizes for detailed analysis.
 
-These results suggest that the relationship between activity and stress is more evident at the aggregate level than within specific occupations. 
+These results suggest that the relationship between activity and stress is more visible at the aggregate level than within specific occupations.
 
-## Final Results
+
+![Clustering Overview](images/Stress_Level_by_Cluster_Side_by_Side.png)
+*Figure: K-means clustering reveals distinct population-level groups based on total activity and stress.*
+
+## Final Observations
 
 - Individuals with a below-average physical activity level could reduce stress by increasing their total activity levels.
 - Individuals with above-average activity can reduce stress by lowering their activity levels.
@@ -38,7 +45,8 @@ We analyzed if the different correlations could be caused by a person's occupati
 
 ## Additional Observations
 
-In the initial EDA for this notebook I found that the strongest corallation present was the coralation between sleep quality and stress levels. This shows that on an individual level the best way to lower a persons stress is to focus ensuring a stable sleep schuedule.
+- Efforts to improve sleep duration and sleep quality have a huge effect on overall health.
+- Threre was a strong corrilation between pulse rate and stress.
 
 ##### Tools:
 
